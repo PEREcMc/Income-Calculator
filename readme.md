@@ -2,4 +2,4 @@
 
 ### Learning JS
 
-### [Результат здесь](ttps://perecmc.github.io/Income-Calculator/)
+### [Результат здесь](https://perecmc.github.io/Income-Calculator/)
