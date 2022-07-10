@@ -1,0 +1,133 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(
+  45deg,
+  hsl(287deg 81% 48%) 0%,
+  hsl(308deg 100% 45%) 10%,
+  hsl(319deg 100% 50%) 20%,
+  hsl(326deg 100% 50%) 30%,
+  hsl(333deg 100% 50%) 40%,
+  hsl(354deg 100% 64%) 50%,
+  hsl(16deg 100% 62%) 60%,
+  hsl(31deg 100% 56%) 70%,
+  hsl(42deg 100% 50%) 80%,
+  hsl(49deg 100% 50%) 90%,
+  hsl(55deg 100% 50%) 100%
+);
+    padding-top: 110px;
+    padding-left: 150px;
+}
+.main-wrapper h1 {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    color: #000;
+    margin: 0px 0px 60px 0px
+}
+h6 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 20px;
+}
+input::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.main-wrapper {
+
+}
+.inputs-block {
+    display: flex;
+    
+}
+.inputs-block-column {
+    margin-bottom: 30px;
+    flex: 0 1 33.3336%;
+}
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.input {
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding: 15px;
+
+}
+.total-numb {
+
+}
+.total-numb h6 {
+    margin-bottom: 5px;
+}
+.total-numb:not(:last-child) {
+    margin-bottom: 25px;
+}
+.total {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: #000;
+    background: none;
+}
+.range-block {
+    margin-bottom: 30px;
+
+}
+.range-wrapper {
+}
+.result-block {
+    display: flex;
+}
+.total-numb :not(.total) {
+    background: none;
+    font-family: inherit;
+    font-size: 18px;
+}
+#accumulation, #spend {
+    font-weight: 500;
+}
+
+#money-box-range:hover {
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+}
