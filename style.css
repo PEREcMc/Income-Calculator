@@ -44,8 +44,10 @@ body {
   hsl(49deg 100% 50%) 90%,
   hsl(55deg 100% 50%) 100%
 );
-    padding-top: 110px;
-    padding-left: 150px;
+    height: 100vh  ;
+    padding-top: 80px;
+    padding-left: 140px;
+    padding-bottom: 40px;
 }
 .main-wrapper h1 {
     font-weight: bold;
@@ -57,6 +59,7 @@ body {
 h6 {
     margin: 0;
     font-size: 18px;
+    font-weight: 500;
     line-height: 22px;
     color: #000;
     margin-bottom: 20px;
@@ -76,8 +79,10 @@ input::-webkit-outer-spin-button,
     
 }
 .inputs-block-column {
-    margin-bottom: 30px;
     flex: 0 1 33.3336%;
+}
+.inputs-block-column:not(:last-child) {
+    margin-bottom: 30px;
 }
 .inputs-wrapper {
     display: flex;
@@ -88,16 +93,17 @@ input::-webkit-outer-spin-button,
     margin-bottom: 15px;
     margin-right: 20px;
     padding: 15px;
-
+    box-shadow: 2px 2px 3px 1px rgb(0 0 0 / 60%);
+    font-size: 16px;
 }
 .total-numb {
 
 }
 .total-numb h6 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .total-numb:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .total {
     font-family: inherit;
@@ -109,7 +115,9 @@ input::-webkit-outer-spin-button,
 }
 .range-block {
     margin-bottom: 30px;
-
+}
+.range-block h6 {
+    margin-bottom: 10px;
 }
 .range-wrapper {
 }
@@ -130,4 +138,75 @@ input::-webkit-outer-spin-button,
 }
 input:focus {
     outline: none;
+}
+/* -----------------INPUT--------------- */
+@import "compass/css3";
+ input[type=range] {
+	 /* position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin: 0 auto; */
+	 width: 15em;
+	 height: 3em;
+	 background: none;
+	 font: 1em;
+	 cursor: pointer;
+}
+ input[type=range], input[type=range]::-webkit-slider-runnable-track, input[type=range]::-webkit-slider-thumb {
+	 -webkit-appearance: none;
+}
+ input[type=range]::-webkit-slider-runnable-track {
+	 width: 20em;
+	 height: 1.5em;
+	 border-radius: 0.5em;
+	 box-shadow: inset 0 0 0 0.25em #aaa;
+	 background: linear-gradient(90deg, #fffc42, #ef230f);
+}
+ input[type=range]::-moz-range-track {
+	 width: 20em;
+	 height: 1.5em;
+	 border-radius: 0.5em;
+	 box-shadow: inset 0 0 0 0.25em #aaa;
+	 background: linear-gradient(90deg, #fffc42, #ef230f);
+}
+ input[type=range]::-ms-track {
+	 border: none;
+	 width: 20em;
+	 height: 1.5em;
+	 border-radius: 0.5em;
+	 box-shadow: inset 0 0 0 0.25em #aaa;
+	 background: linear-gradient(90deg, #fffc42, #ef230f);
+	 color: transparent;
+}
+ input[type=range]::-ms-fill-lower, input[type=range]::-ms-tooltip {
+	 display: none;
+}
+ input[type=range]::-webkit-slider-thumb {
+	 margin-top: -0.25em;
+	 border: none;
+	 width: 2em;
+	 height: 2em;
+	 border-radius: 0.5em;
+	 box-shadow: inset 0 0 0 0.25em #aaa, 0 0 0.5em #000, 0 0 1em #333;
+	 background: linear-gradient(#fcfcfc, #d6d6d6);
+	 cursor: pointer;
+}
+ input[type=range]::-moz-range-thumb {
+	 border: none;
+	 width: 2em;
+	 height: 2em;
+	 border-radius: 0.5em;
+	 box-shadow: inset 0 0 0 0.25em #aaa, 0 0 0.5em #000, 0 0 1em #333;
+	 background: linear-gradient(#fcfcfc, #d6d6d6);
+	 cursor: pointer;
+}
+ input[type=range]::-ms-thumb {
+	 border: none;
+	 width: 2em;
+	 height: 2em;
+	 border-radius: 0.5em;
+	 box-shadow: inset 0 0 0 0.25em #aaa, 0 0 0.5em #000, 0 0 1em #333;
+	 background: linear-gradient(#fcfcfc, #d6d6d6);
+	 /* cursor: ew-resize; */
+     cursor: pointer;
 }
